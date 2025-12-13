@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#f3e5f5"/>
+  <rect x="40" y="40" width="320" height="220" fill="#ce93d8" stroke="#ba68c8" stroke-width="2"/>
+  <polygon points="200,80 240,160 160,160" fill="#7b1fa2"/>
+  <text x="200" y="200" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#4a148c">JavaScript Certificate</text>
+</svg>

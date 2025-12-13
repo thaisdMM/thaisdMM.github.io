@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#fce4ec"/>
+  <rect x="50" y="50" width="300" height="200" fill="#f48fb1" stroke="#f06292" stroke-width="2"/>
+  <line x1="100" y1="120" x2="300" y2="120" stroke="#ad1457" stroke-width="3"/>
+  <line x1="100" y1="150" x2="250" y2="150" stroke="#ad1457" stroke-width="3"/>
+  <line x1="100" y1="180" x2="200" y2="180" stroke="#ad1457" stroke-width="3"/>
+  <text x="200" y="230" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#880e4f">NLW Connect</text>
+</svg>

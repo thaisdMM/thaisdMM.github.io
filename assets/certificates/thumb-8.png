@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#fff8e1"/>
+  <rect x="60" y="60" width="280" height="180" fill="#ffe082" stroke="#ffd54f" stroke-width="2"/>
+  <path d="M150 120 L200 170 L250 120" fill="#ffa000"/>
+  <text x="200" y="200" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#e65100">Clean Code</text>
+</svg>
