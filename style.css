@@ -478,3 +478,52 @@ footer {
     padding: 0 1rem;
   }
 }
+/* Contact Section */
+#contact {
+  text-align: center;
+}
+
+#contact .section-title {
+  text-align: center;
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-secondary.btn-alt {
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.footer-tagline {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+
+.learning-track-title {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.learning-next-steps {
+  margin-top: 1rem;
+  color: #78350f;
+}
+
+.projects-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.certificates-intro {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
