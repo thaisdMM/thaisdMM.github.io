@@ -32,7 +32,7 @@ body {
   padding: 0 2rem;
 }
 
-/* Header */
+/* ===== Header ===== */
 header {
   background: linear-gradient(135deg, var(--primary) 0%, #1e40af 100%);
   color: white;
@@ -139,7 +139,17 @@ header::before {
   color: var(--primary);
 }
 
-/* Section */
+.btn-secondary.btn-alt {
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-secondary.btn-alt:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+/* ===== Sections ===== */
 section {
   padding: 4rem 0;
 }
@@ -167,7 +177,7 @@ section:nth-child(even) {
   border-radius: 2px;
 }
 
-/* Journey Section */
+/* ===== Journey Section ===== */
 .journey-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -194,7 +204,70 @@ section:nth-child(even) {
   margin-bottom: 1rem;
 }
 
-/* Skills */
+/* ===== Learning Path ===== */
+.learning-current {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border: 2px solid #f59e0b;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.learning-current h3 {
+  color: #92400e;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.learning-track {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-top: 1rem;
+}
+
+.learning-track-title {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.learning-next-steps {
+  margin-top: 1rem;
+  color: #78350f;
+}
+
+.course-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.course-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg-alt);
+  border-radius: 0.5rem;
+}
+
+.course-check {
+  color: var(--success);
+  font-size: 1.5rem;
+}
+
+.course-info h4 {
+  color: var(--primary);
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.course-meta {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+/* ===== Skills ===== */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -229,7 +302,7 @@ section:nth-child(even) {
   border: 1px solid var(--border);
 }
 
-/* Projects */
+/* ===== Projects ===== */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -243,6 +316,7 @@ section:nth-child(even) {
   box-shadow: var(--shadow);
   overflow: hidden;
   transition: all 0.3s ease;
+  position: relative;
 }
 
 .project-card:hover {
@@ -250,15 +324,35 @@ section:nth-child(even) {
   box-shadow: var(--shadow-lg);
 }
 
+.project-badge {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 10;
+}
+
+.badge-live {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  padding: 0.35rem 0.85rem;
+  border-radius: 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+  white-space: nowrap;
+}
+
 .project-header {
   background: linear-gradient(135deg, var(--secondary), var(--accent));
   color: white;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  min-height: 4.5rem;
 }
 
 .project-header h3 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
+  padding-right: 4rem;
 }
 
 .project-body {
@@ -292,6 +386,7 @@ section:nth-child(even) {
   gap: 0.75rem;
   padding-top: 1rem;
   border-top: 1px solid var(--border);
+  flex-wrap: wrap;
 }
 
 .project-link {
@@ -305,65 +400,37 @@ section:nth-child(even) {
   text-decoration: underline;
 }
 
-/* Learning Path */
-.learning-current {
-  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-  border: 2px solid #f59e0b;
-  border-radius: 1rem;
-  padding: 2rem;
+.project-link-primary {
+  color: var(--success);
+  font-weight: 700;
+}
+
+.projects-footer {
+  text-align: center;
   margin-top: 2rem;
 }
 
-.learning-current h3 {
-  color: #92400e;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
-
-.learning-track {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  margin-top: 1rem;
-}
-
-.course-list {
-  display: grid;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.course-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  background: var(--bg-alt);
-  border-radius: 0.5rem;
-}
-
-.course-check {
-  color: var(--success);
-  font-size: 1.5rem;
-}
-
-.course-info h4 {
-  color: var(--primary);
-  font-size: 1rem;
-  margin-bottom: 0.25rem;
-}
-
-.course-meta {
-  font-size: 0.85rem;
+/* ===== Certificates ===== */
+.certificates-intro {
   color: var(--text-light);
+  margin-bottom: 2rem;
 }
 
-/* Certificates */
+.certificates-recent {
+  margin-bottom: 2rem;
+}
+
+.certificates-section-title {
+  color: var(--primary);
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
 .certificates-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .certificate-card {
@@ -434,7 +501,91 @@ section:nth-child(even) {
   text-decoration: underline;
 }
 
-/* Footer */
+/* Certificates Archive (Collapsible) */
+.certificates-archive {
+  margin-top: 2rem;
+  border: 2px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  background: white;
+}
+
+.certificates-archive-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary);
+  list-style: none;
+  user-select: none;
+}
+
+.certificates-archive-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.certificates-archive-toggle:hover {
+  color: var(--secondary);
+}
+
+.toggle-icon {
+  transition: transform 0.3s ease;
+}
+
+.certificates-archive[open] .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.certificates-archive .certificates-grid {
+  margin-top: 1.5rem;
+}
+
+/* ===== CTA Section (Open to Opportunities) ===== */
+.cta-section {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  text-align: center;
+}
+
+.cta-section .section-title {
+  text-align: center;
+}
+
+.cta-section .section-title::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.opportunity-description {
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.availability-info {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.status-badge {
+  background: white;
+  color: var(--success);
+  padding: 0.5rem 1.25rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: var(--shadow);
+  border: 2px solid var(--success);
+}
+
+/* ===== Footer ===== */
 footer {
   background: var(--primary);
   color: white;
@@ -460,7 +611,13 @@ footer {
   color: var(--accent);
 }
 
-/* Responsive */
+.footer-tagline {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2rem;
@@ -477,53 +634,20 @@ footer {
   .container {
     padding: 0 1rem;
   }
-}
-/* Contact Section */
-#contact {
-  text-align: center;
-}
 
-#contact .section-title {
-  text-align: center;
-}
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.contact-description {
-  font-size: 1.1rem;
-  color: var(--text-light);
-  margin-bottom: 2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
 
-.btn-secondary.btn-alt {
-  color: var(--secondary);
-  border-color: var(--secondary);
+  .availability-info {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
-.footer-tagline {
-  font-size: 0.9rem;
-  opacity: 0.8;
-  margin-top: 1rem;
-}
-
-.learning-track-title {
-  color: var(--primary);
-  margin-bottom: 1rem;
-}
-
-.learning-next-steps {
-  margin-top: 1rem;
-  color: #78350f;
-}
-
-.projects-footer {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.certificates-intro {
-  color: var(--text-light);
-  margin-bottom: 2rem;
-}
-
