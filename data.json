@@ -1,0 +1,295 @@
+{
+  "hero": {
+    "badges": ["Python", "Flask", "SQL", "Clean Code", "RESTful APIs"]
+  },
+  "journey": [
+    {
+      "icon": "⚖️",
+      "title": "Legal Background",
+      "description": "Bachelor's and Postgraduate degree in Civil Law from PUC Minas. Trained in rigorous problem analysis, documentation, and stakeholder communication."
+    },
+    {
+      "icon": "💡",
+      "title": "Career Pivot",
+      "description": "Decided to transition into tech, combining analytical skills from law with passion for programming and problem-solving through code."
+    },
+    {
+      "icon": "🎯",
+      "title": "Focused Learning",
+      "description": "Completed 12+ technical certifications and currently advancing through Alura's comprehensive Backend Python Career Track with hands-on projects."
+    }
+  ],
+  "recentCourses": [
+    {
+      "title": "Git and GitHub: Sharing and Collaborating on Projects",
+      "hours": 8,
+      "completedDate": "Dec 12, 2025"
+    },
+    {
+      "title": "Python: Applying Object-Oriented Programming",
+      "hours": 6,
+      "completedDate": "Dec 08, 2025"
+    },
+    {
+      "title": "Practicing Python: Functions",
+      "hours": 4,
+      "completedDate": "Nov 28, 2025"
+    }
+  ],
+  "skills": [
+    {
+      "icon": "🐍",
+      "category": "Backend & Languages",
+      "tags": ["Python", "OOP", "Flask", "Java", "PHP"]
+    },
+    {
+      "icon": "🗄️",
+      "category": "Databases",
+      "tags": ["SQLite", "PostgreSQL", "SQLAlchemy", "Prisma"]
+    },
+    {
+      "icon": "🌐",
+      "category": "Web Technologies",
+      "tags": ["HTML5", "CSS3", "JavaScript", "RESTful APIs"]
+    },
+    {
+      "icon": "🛠️",
+      "category": "Tools & Practices",
+      "tags": ["Git", "GitHub", "Clean Code", "Testing", "Docker (learning)"]
+    },
+    {
+      "icon": "💼",
+      "category": "Transferable Skills",
+      "tags": [
+        "Problem Analysis",
+        "Documentation",
+        "Communication",
+        "Critical Thinking"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "NLW Agents - AI Integration",
+      "description": "Full-stack application with Node.js backend (Express, Prisma, PostgreSQL) and React frontend, integrating OpenAI API for intelligent agent capabilities.",
+      "tech": ["TypeScript", "Node.js", "React", "PostgreSQL", "OpenAI API"],
+      "github": "https://github.com/thaisdMM/nlw-20-agents-server-intermediate",
+      "githubFrontend": "https://github.com/thaisdMM/nlw-20-agents-web-intermediate",
+      "demo": "https://thaisdmm.github.io/nlw-20-agents-beginner/",
+      "featured": true,
+      "hasLiveDemo": true
+    },
+    {
+      "id": 2,
+      "title": "Clean Code Flask API",
+      "description": "RESTful API built with Flask following clean architecture principles, featuring user management with SQLAlchemy ORM and comprehensive test coverage.",
+      "tech": ["Python", "Flask", "SQLAlchemy", "Pytest", "SQLite"],
+      "github": "https://github.com/thaisdMM/clean_code_project2",
+      "demo": null,
+      "featured": true,
+      "hasLiveDemo": false
+    },
+    {
+      "id": 3,
+      "title": "AI Prompt Manager",
+      "description": "Lightweight web application for organizing AI prompts with search, edit, and clipboard functionality using browser LocalStorage.",
+      "tech": ["JavaScript", "HTML5", "CSS3", "LocalStorage"],
+      "github": "https://github.com/thaisdMM/prompts_manager",
+      "demo": "https://thaisdmm.github.io/prompts_manager/",
+      "featured": true,
+      "hasLiveDemo": true
+    },
+    {
+      "id": 4,
+      "title": "DevStage - Event Registration System",
+      "description": "Event registration API with referral tracking system. Users generate referral links and earn points when others register using their links.",
+      "tech": ["Python", "Flask", "SQLAlchemy", "SQLite", "REST API"],
+      "github": "https://github.com/thaisdMM/nlw-19-connect-python",
+      "demo": "https://thaisdmm.github.io/nlw-19-connect-full-stack/",
+      "featured": true,
+      "hasLiveDemo": true
+    },
+    {
+      "id": 5,
+      "title": "School Management System",
+      "description": "CLI-based academic records management system with student registration, subject assignment, and grade tracking using JSON file storage.",
+      "tech": ["Python", "OOP", "JSON", "Modular Design"],
+      "github": "https://github.com/thaisdMM/school-management-system",
+      "demo": null,
+      "featured": true,
+      "hasLiveDemo": false
+    },
+    {
+      "id": 6,
+      "title": "Music Collection Manager",
+      "description": "Python application demonstrating clean code principles with song registration, playlist creation, and separation of concerns across MVC layers.",
+      "tech": [
+        "Python",
+        "Clean Architecture",
+        "MVC Pattern",
+        "Singleton Pattern"
+      ],
+      "github": "https://github.com/thaisdMM/clean_code_projeto_1",
+      "demo": null,
+      "featured": true,
+      "hasLiveDemo": false
+    }
+  ],
+  "certificates": [
+    {
+      "id": 1,
+      "title": "Git and GitHub Collaboration",
+      "provider": "Alura",
+      "date": "Dec 12, 2024",
+      "hours": "8 hours",
+      "tech": "Version Control, Branching, Pull Requests, Collaboration Workflows",
+      "repository": "https://github.com/thaisdMM/Python-Git-Github-ALURA",
+      "certificate": "assets/certificates/Git-and-GitHub-sharing-and-collaborating-on-projects-Alura.pdf",
+      "recent": true
+    },
+    {
+      "id": 2,
+      "title": "Python: Applying OOP",
+      "provider": "Alura",
+      "date": "Dec 08, 2024",
+      "hours": "6 hours",
+      "tech": "Object-Oriented Programming, Classes, Inheritance, Polymorphism, Encapsulation",
+      "repository": "https://github.com/thaisdMM/Python-ALURA/tree/main/001/Estrurando_Aplicacoes_Web/aplicando_orientacao_a_objetos",
+      "certificate": "assets/certificates/Python-applying-Object-Orientation-Alura.pdf",
+      "recent": true
+    },
+    {
+      "id": 3,
+      "title": "Practicing Python: Functions",
+      "provider": "Alura",
+      "date": "Nov 28, 2024",
+      "hours": "4 hours",
+      "tech": "Function Design, Parameters, Return Values, Scope, Best Practices",
+      "repository": "https://github.com/thaisdMM/Python-ALURA/tree/main/0_Base_Fundamentos_de_Progamacao/praticando_funcoes",
+      "certificate": "assets/certificates/Practicing-Python-functions-Alura.pdf",
+      "recent": true
+    },
+    {
+      "id": 4,
+      "title": "NLW Agents IA Advanced",
+      "provider": "Rocketseat",
+      "date": "Nov 7, 2024",
+      "hours": null,
+      "tech": "Node.js, TypeScript, Express, Prisma, PostgreSQL, OpenAI API",
+      "repository": "https://github.com/thaisdMM/nlw-20-agents-server-intermediate",
+      "repositoryFrontend": "https://github.com/thaisdMM/nlw-20-agents-web-intermediate",
+      "certificate": "assets/certificates/certificate-07-11-25-NLW-agents-IA-advanced-rocketseat.pdf",
+      "recent": false
+    },
+    {
+      "id": 5,
+      "title": "Clean Code Python",
+      "provider": "Rocketseat",
+      "date": "Oct 26, 2024",
+      "hours": null,
+      "tech": "Python, Clean Architecture, SOLID Principles, OOP",
+      "repository": "https://github.com/thaisdMM/clean_code_project2",
+      "certificate": "assets/certificates/certificate-26-10-25-clean-code-python-rocketseat.pdf",
+      "recent": false
+    },
+    {
+      "id": 6,
+      "title": "NLW 21 Pocket Fullstack",
+      "provider": "Rocketseat",
+      "date": "Oct 12, 2024",
+      "hours": null,
+      "tech": "HTML, CSS, JavaScript, LocalStorage, AI Integration",
+      "repository": "https://github.com/thaisdMM/prompts_manager",
+      "certificate": "assets/certificates/certificate-12-10-25-NLW-21-Pocket-Begginer-Fullstack-rocketseat.pdf",
+      "recent": false
+    },
+    {
+      "id": 7,
+      "title": "Java Back End",
+      "provider": "Rocketseat",
+      "date": "Oct 19, 2024",
+      "hours": null,
+      "tech": "Java, Spring Boot, REST API",
+      "repository": "https://github.com/thaisdMM/Java-To-Do-List-with-Spring-Boot",
+      "certificate": "assets/certificates/certificate-19-10-24-java-back-end-rocketseat.pdf",
+      "recent": false
+    },
+    {
+      "id": 8,
+      "title": "PHP Development",
+      "provider": "Rocketseat",
+      "date": "Oct 13, 2024",
+      "hours": null,
+      "tech": "PHP, Web Development",
+      "repository": "https://github.com/thaisdMM/Freelance-Hours-PHP-app",
+      "certificate": "assets/certificates/certificate-13-10-24-PHP-rocketseat.pdf",
+      "recent": false
+    },
+    {
+      "id": 9,
+      "title": "Python Fundamentals",
+      "provider": "Rocketseat",
+      "date": "Sep 13, 2024",
+      "hours": null,
+      "tech": "Python, Variables, Conditionals, Loops, Functions",
+      "repository": "https://github.com/thaisdMM/Python3-Gustavo-Guanabara-Curso-em-Video",
+      "certificate": "assets/certificates/certificate-13-09-25-python-fundamentals-rocketseat.pdf",
+      "recent": false
+    },
+    {
+      "id": 10,
+      "title": "NLW 19 Connect Python",
+      "provider": "Rocketseat",
+      "date": "Feb 21, 2024",
+      "hours": null,
+      "tech": "Python, Flask, SQLite, REST API, Event System",
+      "repository": "https://github.com/thaisdMM/nlw-19-connect-python",
+      "certificate": "assets/certificates/certificate-21-02-25-NLW-19-connect-python-rocketseat.pdf",
+      "recent": false
+    },
+    {
+      "id": 11,
+      "title": "NLW 19 Connect Fullstack",
+      "provider": "Rocketseat",
+      "date": "Feb 23, 2024",
+      "hours": null,
+      "tech": "HTML, CSS, JavaScript, Python, Flask",
+      "repository": "https://github.com/thaisdMM/nlw-19-connect-full-stack",
+      "certificate": "assets/certificates/certificate-23-02-25-NLW-19-connect-begginer-Fullstack-rocketseat.pdf",
+      "recent": false
+    },
+    {
+      "id": 12,
+      "title": "Python Developer",
+      "provider": "XPE",
+      "date": "Dec 20, 2022",
+      "hours": null,
+      "tech": "Python, OOP, Data Structures",
+      "repository": "https://github.com/thaisdMM/Python_Rocketseat",
+      "certificate": "assets/certificates/certificate-20-12-22-Python-Developer-rocketseat.pdf",
+      "recent": false
+    },
+    {
+      "id": 13,
+      "title": "Beginner Software Programmer",
+      "provider": "XPE",
+      "date": "Oct 20, 2022",
+      "hours": null,
+      "tech": "Programming Logic, Java, Python, HTML/CSS/JS",
+      "repository": "https://github.com/thaisdMM/Bootcamp-Programador-de-Software-Iniciante-Fa",
+      "certificate": "assets/certificates/certificate-20-10-22-beginner-software-programmer-XPE.pdf",
+      "recent": false
+    }
+  ],
+  "contact": {
+    "linkedin": "https://www.linkedin.com/in/tha%C3%ADs-de-medeiros-moreira-59a28188/",
+    "github": "https://github.com/thaisdMM",
+    "email": "thaisdmm.contact@gmail.com",
+    "availability": {
+      "status": "Available immediately",
+      "relocation": "Open to relocation",
+      "remote": "Remote-friendly"
+    }
+  }
+}
