@@ -1,6 +1,6 @@
 {
   "hero": {
-    "badges": ["Python", "Flask", "SQL", "Clean Code", "RESTful APIs"]
+    "badges": ["Python", "Django", "Flask", "SQL", "Clean Code", "RESTful APIs"]
   },
   "journey": [
     {
@@ -16,36 +16,19 @@
     {
       "icon": "🎯",
       "title": "Focused Learning",
-      "description": "Completed 12+ technical certifications and currently advancing through Alura's comprehensive Backend Python Career Track with hands-on projects."
-    }
-  ],
-  "recentCourses": [
-    {
-      "title": "Git and GitHub: Sharing and Collaborating on Projects",
-      "hours": 8,
-      "completedDate": "Dec 12, 2025"
-    },
-    {
-      "title": "Python: Applying Object-Oriented Programming",
-      "hours": 6,
-      "completedDate": "Dec 08, 2025"
-    },
-    {
-      "title": "Practicing Python: Functions",
-      "hours": 4,
-      "completedDate": "Nov 28, 2025"
+      "description": "Completed 20+ technical certifications and currently advancing through Alura's comprehensive Backend Python Career Track with hands-on projects."
     }
   ],
   "skills": [
     {
       "icon": "🐍",
       "category": "Backend & Languages",
-      "tags": ["Python", "OOP", "Flask", "Java", "PHP"]
+      "tags": ["Python", "OOP", "Django", "Flask", "FastAPI (basics)"]
     },
     {
       "icon": "🗄️",
       "category": "Databases",
-      "tags": ["SQLite", "PostgreSQL", "SQLAlchemy", "Prisma"]
+      "tags": ["SQLite", "PostgreSQL", "SQLAlchemy"]
     },
     {
       "icon": "🌐",
@@ -55,7 +38,14 @@
     {
       "icon": "🛠️",
       "category": "Tools & Practices",
-      "tags": ["Git", "GitHub", "Clean Code", "Testing", "Docker (learning)"]
+      "tags": [
+        "Git",
+        "GitHub",
+        "Clean Code",
+        "Pytest",
+        "Docker (learning)",
+        "JWT"
+      ]
     },
     {
       "icon": "💼",
@@ -70,18 +60,15 @@
   ],
   "projects": [
     {
-      "id": 1,
-      "title": "NLW Agents - AI Integration",
-      "description": "Full-stack application with Node.js backend (Express, Prisma, PostgreSQL) and React frontend, integrating OpenAI API for intelligent agent capabilities.",
-      "tech": ["TypeScript", "Node.js", "React", "PostgreSQL", "OpenAI API"],
-      "github": "https://github.com/thaisdMM/nlw-20-agents-server-intermediate",
-      "githubFrontend": "https://github.com/thaisdMM/nlw-20-agents-web-intermediate",
-      "demo": "https://thaisdmm.github.io/nlw-20-agents-beginner/",
+      "title": "SecureBank API - JWT Authentication",
+      "description": "Banking authentication API implementing JWT tokens and Argon2 password hashing. Features user authentication, secure password storage, and automated testing with Pytest.",
+      "tech": ["Python", "Flask", "JWT", "Argon2", "SQLAlchemy", "Pytest"],
+      "github": "https://github.com/thaisdMM/SecureBank-API-JWT-e-Argon2-Study",
+      "demo": null,
       "featured": true,
-      "hasLiveDemo": true
+      "hasLiveDemo": false
     },
     {
-      "id": 2,
       "title": "Clean Code Flask API",
       "description": "RESTful API built with Flask following clean architecture principles, featuring user management with SQLAlchemy ORM and comprehensive test coverage.",
       "tech": ["Python", "Flask", "SQLAlchemy", "Pytest", "SQLite"],
@@ -91,17 +78,6 @@
       "hasLiveDemo": false
     },
     {
-      "id": 3,
-      "title": "AI Prompt Manager",
-      "description": "Lightweight web application for organizing AI prompts with search, edit, and clipboard functionality using browser LocalStorage.",
-      "tech": ["JavaScript", "HTML5", "CSS3", "LocalStorage"],
-      "github": "https://github.com/thaisdMM/prompts_manager",
-      "demo": "https://thaisdmm.github.io/prompts_manager/",
-      "featured": true,
-      "hasLiveDemo": true
-    },
-    {
-      "id": 4,
       "title": "DevStage - Event Registration System",
       "description": "Event registration API with referral tracking system. Users generate referral links and earn points when others register using their links.",
       "tech": ["Python", "Flask", "SQLAlchemy", "SQLite", "REST API"],
@@ -111,7 +87,22 @@
       "hasLiveDemo": true
     },
     {
-      "id": 5,
+      "title": "Alura Space - Django Web Application",
+      "description": "Django web application with templates, admin interface, database integration, image handling, and search filters. Demonstrates fundamental Django concepts and project organization.",
+      "tech": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "SQLite",
+        "Templates",
+        "Admin Interface"
+      ],
+      "github": "https://github.com/thaisdMM/alura_space",
+      "demo": null,
+      "featured": true,
+      "hasLiveDemo": false
+    },
+    {
       "title": "School Management System",
       "description": "CLI-based academic records management system with student registration, subject assignment, and grade tracking using JSON file storage.",
       "tech": ["Python", "OOP", "JSON", "Modular Design"],
@@ -121,165 +112,207 @@
       "hasLiveDemo": false
     },
     {
-      "id": 6,
-      "title": "Music Collection Manager",
-      "description": "Python application demonstrating clean code principles with song registration, playlist creation, and separation of concerns across MVC layers.",
-      "tech": [
-        "Python",
-        "Clean Architecture",
-        "MVC Pattern",
-        "Singleton Pattern"
-      ],
-      "github": "https://github.com/thaisdMM/clean_code_projeto_1",
-      "demo": null,
+      "title": "NLW Agents - AI Integration",
+      "description": "Full-stack application with Node.js backend (Express, Prisma, PostgreSQL) and React frontend, integrating OpenAI API for intelligent agent capabilities.",
+      "tech": ["TypeScript", "Node.js", "React", "PostgreSQL", "OpenAI API"],
+      "github": "https://github.com/thaisdMM/nlw-20-agents-server-intermediate",
+      "githubFrontend": "https://github.com/thaisdMM/nlw-20-agents-web-intermediate",
       "featured": true,
       "hasLiveDemo": false
     }
   ],
   "certificates": [
     {
-      "id": 1,
-      "title": "Git and GitHub Collaboration",
+      "title": "JWT Authentication and Security",
+      "provider": "Rocketseat",
+      "date": "2026-02-18",
+      "hours": 7,
+      "tech": "Flask, HTTP, API, SQLAlchemy, Flask-Login, Pytest, Databases, JWT, Argon2",
+      "repository": "https://github.com/thaisdMM/SecureBank-API-JWT-e-Argon2-Study",
+      "certificate": "assets/certificates/certificate-2026-02-18-jwt-authentication-security-rocketseat.pdf"
+    },
+    {
+      "title": "Django: Data Persistence and Admin",
       "provider": "Alura",
-      "date": "Dec 12, 2024",
-      "hours": "8 hours",
-      "tech": "Version Control, Branching, Pull Requests, Collaboration Workflows",
+      "date": "2026-02-06",
+      "hours": 10,
+      "tech": "Django, SQLite, PostgreSQL, ORM, Admin Interface, Image Handling, Search Filters, Data Management",
+      "repository": "https://github.com/thaisdMM/alura_space/tree/persistencia-dados-e-admin",
+      "certificate": "assets/certificates/certificate-2026-02-06-django-data-persistence-admin-alura.pdf"
+    },
+    {
+      "title": "Django: Templates and Best Practices",
+      "provider": "Alura",
+      "date": "2026-02-02",
+      "hours": 8,
+      "tech": "Django, Templates, Static Files, Git, GitHub, Views, Apps, Project Configuration, Partials, Best Practices",
+      "repository": "https://github.com/thaisdMM/alura_space",
+      "certificate": "assets/certificates/certificate-2026-02-02-django-templates-best-practices-alura.pdf"
+    },
+    {
+      "title": "Python: Data Persistence with Files, Databases and REST APIs",
+      "provider": "Alura",
+      "date": "2026-01-25",
+      "hours": 14,
+      "tech": "Python, Lists, Tuples, Dictionaries, File Manipulation, SQLite, SQL, PostgreSQL, FastAPI, Data Modeling, Data Persistence",
+      "repository": "https://github.com/thaisdMM/python-persistencia-dados-banco-dados-api-rest-alura",
+      "certificate": "assets/certificates/certificate-2026-01-25-python-data-persistence-databases-apis-alura.pdf"
+    },
+    {
+      "title": "Python: Advanced Object-Oriented Programming and API Consumption",
+      "provider": "Alura",
+      "date": "2025-12-23",
+      "hours": 8,
+      "tech": "Python, OOP, Inheritance, Polymorphism, Abstract Methods, Virtual Environments, API Requests, JSON, File Handling, FastAPI",
+      "repository": "https://github.com/thaisdMM/python-avance-oop-e-consuma-api-alura",
+      "certificate": "assets/certificates/certificate-2025-12-23-python-advanced-oop-api-consumption-alura.pdf"
+    },
+    {
+      "title": "Git and GitHub: Sharing and Collaborating on Projects",
+      "provider": "Alura",
+      "date": "2025-12-12",
+      "hours": 8,
+      "tech": "Git, GitHub, Version Control, Branching, Pull Requests, Collaboration Workflows, IDE Integration, Time Travel",
       "repository": "https://github.com/thaisdMM/Python-Git-Github-ALURA",
-      "certificate": "assets/certificates/Git-and-GitHub-sharing-and-collaborating-on-projects-Alura.pdf",
-      "recent": true
+      "certificate": "assets/certificates/certificate-2025-12-12-git-github-collaboration-alura.pdf"
     },
     {
-      "id": 2,
-      "title": "Python: Applying OOP",
+      "title": "Python: Applying Object-Oriented Programming",
       "provider": "Alura",
-      "date": "Dec 08, 2024",
-      "hours": "6 hours",
-      "tech": "Object-Oriented Programming, Classes, Inheritance, Polymorphism, Encapsulation",
+      "date": "2025-12-08",
+      "hours": 6,
+      "tech": "Python, Object-Oriented Programming, Classes, Constructors, Properties, Class Methods, Composition, Importing Classes",
       "repository": "https://github.com/thaisdMM/Python-ALURA/tree/main/001/Estrurando_Aplicacoes_Web/aplicando_orientacao_a_objetos",
-      "certificate": "assets/certificates/Python-applying-Object-Orientation-Alura.pdf",
-      "recent": true
+      "certificate": "assets/certificates/certificate-2025-12-08-python-applying-oop-alura.pdf"
     },
     {
-      "id": 3,
+      "title": "NLW Agents - Beginner",
+      "provider": "Rocketseat",
+      "date": "2025-12-07",
+      "hours": 5,
+      "tech": "HTML, CSS, JavaScript, Web Fundamentals, Programming Logic, Artificial Intelligence, LLMs, AI Agents, Prompt Engineering, Gemini",
+      "repository": "https://github.com/thaisdMM/nlw-20-agents-beginner",
+      "demo": "https://thaisdmm.github.io/nlw-20-agents-beginner/",
+      "certificate": "assets/certificates/certificate-2025-12-07-nlw-agents-beginner-rocketseat.pdf"
+    },
+    {
       "title": "Practicing Python: Functions",
       "provider": "Alura",
-      "date": "Nov 28, 2024",
-      "hours": "4 hours",
-      "tech": "Function Design, Parameters, Return Values, Scope, Best Practices",
+      "date": "2025-11-28",
+      "hours": 4,
+      "tech": "Python, Function Design, Parameters, Return Values, Scope, Best Practices",
       "repository": "https://github.com/thaisdMM/Python-ALURA/tree/main/0_Base_Fundamentos_de_Progamacao/praticando_funcoes",
-      "certificate": "assets/certificates/Practicing-Python-functions-Alura.pdf",
-      "recent": true
+      "certificate": "assets/certificates/certificate-2025-11-28-practicing-python-functions-alura.pdf"
     },
     {
-      "id": 4,
-      "title": "NLW Agents IA Advanced",
+      "title": "NLW Agents - Advanced",
       "provider": "Rocketseat",
-      "date": "Nov 7, 2024",
-      "hours": null,
-      "tech": "Node.js, TypeScript, Express, Prisma, PostgreSQL, OpenAI API",
+      "date": "2025-11-07",
+      "hours": 5,
+      "tech": "Node.js, Fastify, Docker, PostgreSQL, Drizzle ORM, React, Vite, Tailwind CSS, React Router DOM, React Query, Custom Hooks, Audio Recording, AI Integration, Gemini API, Embeddings",
       "repository": "https://github.com/thaisdMM/nlw-20-agents-server-intermediate",
-      "repositoryFrontend": "https://github.com/thaisdMM/nlw-20-agents-web-intermediate",
-      "certificate": "assets/certificates/certificate-07-11-25-NLW-agents-IA-advanced-rocketseat.pdf",
-      "recent": false
+      "certificate": "assets/certificates/certificate-2025-11-07-nlw-agents-advanced-rocketseat.pdf"
     },
     {
-      "id": 5,
       "title": "Clean Code Python",
       "provider": "Rocketseat",
-      "date": "Oct 26, 2024",
-      "hours": null,
-      "tech": "Python, Clean Architecture, SOLID Principles, OOP",
+      "date": "2025-10-26",
+      "hours": 13,
+      "tech": "Python, Clean Architecture, MVC Architecture, SOLID Principles, Interfaces, Dependency Injection, Error Handling, Custom Exceptions, Pydantic, Unit Testing, Mocks, Requirements.txt",
       "repository": "https://github.com/thaisdMM/clean_code_project2",
-      "certificate": "assets/certificates/certificate-26-10-25-clean-code-python-rocketseat.pdf",
-      "recent": false
+      "certificate": "assets/certificates/certificate-2025-10-26-clean-code-python-rocketseat.pdf"
     },
     {
-      "id": 6,
-      "title": "NLW 21 Pocket Fullstack",
+      "title": "NLW Pocket Fullstack",
       "provider": "Rocketseat",
-      "date": "Oct 12, 2024",
-      "hours": null,
-      "tech": "HTML, CSS, JavaScript, LocalStorage, AI Integration",
+      "date": "2025-10-12",
+      "hours": 5,
+      "tech": "HTML, CSS, JavaScript, Web Development, Artificial Intelligence, Prompt Manager, LocalStorage",
       "repository": "https://github.com/thaisdMM/prompts_manager",
-      "certificate": "assets/certificates/certificate-12-10-25-NLW-21-Pocket-Begginer-Fullstack-rocketseat.pdf",
-      "recent": false
+      "demo": "https://thaisdmm.github.io/prompts_manager/",
+      "certificate": "assets/certificates/certificate-2025-10-12-nlw-pocket-fullstack-rocketseat.pdf"
     },
     {
-      "id": 7,
-      "title": "Java Back End",
-      "provider": "Rocketseat",
-      "date": "Oct 19, 2024",
-      "hours": null,
-      "tech": "Java, Spring Boot, REST API",
-      "repository": "https://github.com/thaisdMM/Java-To-Do-List-with-Spring-Boot",
-      "certificate": "assets/certificates/certificate-19-10-24-java-back-end-rocketseat.pdf",
-      "recent": false
-    },
-    {
-      "id": 8,
-      "title": "PHP Development",
-      "provider": "Rocketseat",
-      "date": "Oct 13, 2024",
-      "hours": null,
-      "tech": "PHP, Web Development",
-      "repository": "https://github.com/thaisdMM/Freelance-Hours-PHP-app",
-      "certificate": "assets/certificates/certificate-13-10-24-PHP-rocketseat.pdf",
-      "recent": false
-    },
-    {
-      "id": 9,
       "title": "Python Fundamentals",
       "provider": "Rocketseat",
-      "date": "Sep 13, 2024",
-      "hours": null,
-      "tech": "Python, Variables, Conditionals, Loops, Functions",
-      "repository": "https://github.com/thaisdMM/Python3-Gustavo-Guanabara-Curso-em-Video",
-      "certificate": "assets/certificates/certificate-13-09-25-python-fundamentals-rocketseat.pdf",
-      "recent": false
+      "date": "2025-09-13",
+      "hours": 10,
+      "tech": "Python, Data Structures, Variables, Data Types, Conditionals, Loop Structures, Object-Oriented Programming",
+      "repository": "https://github.com/thaisdMM/Python_Rocketseat",
+      "certificate": "assets/certificates/certificate-2025-09-13-python-fundamentals-rocketseat.pdf"
     },
     {
-      "id": 10,
-      "title": "NLW 19 Connect Python",
+      "title": "NLW Connect - Fullstack",
       "provider": "Rocketseat",
-      "date": "Feb 21, 2024",
-      "hours": null,
-      "tech": "Python, Flask, SQLite, REST API, Event System",
-      "repository": "https://github.com/thaisdMM/nlw-19-connect-python",
-      "certificate": "assets/certificates/certificate-21-02-25-NLW-19-connect-python-rocketseat.pdf",
-      "recent": false
-    },
-    {
-      "id": 11,
-      "title": "NLW 19 Connect Fullstack",
-      "provider": "Rocketseat",
-      "date": "Feb 23, 2024",
-      "hours": null,
-      "tech": "HTML, CSS, JavaScript, Python, Flask",
+      "date": "2025-02-23",
+      "hours": 5,
+      "tech": "HTML, CSS, JavaScript, Programming Fundamentals, Frontend Development",
       "repository": "https://github.com/thaisdMM/nlw-19-connect-full-stack",
-      "certificate": "assets/certificates/certificate-23-02-25-NLW-19-connect-begginer-Fullstack-rocketseat.pdf",
-      "recent": false
+      "demo": "https://thaisdmm.github.io/nlw-19-connect-full-stack/",
+      "certificate": "assets/certificates/certificate-2025-02-23-nlw-connect-fullstack-rocketseat.pdf"
     },
     {
-      "id": 12,
+      "title": "NLW Connect - Python",
+      "provider": "Rocketseat",
+      "date": "2025-02-21",
+      "hours": 5,
+      "tech": "Python, Flask, REST APIs, SQLAlchemy, Repository Pattern, Controllers, Interfaces, Data Validation, Cerberus, HTTP Standards, Route Creation, PyTest",
+      "repository": "https://github.com/thaisdMM/nlw-19-connect-python",
+      "certificate": "assets/certificates/certificate-2025-02-21-nlw-connect-python-rocketseat.pdf"
+    },
+    {
+      "title": "DevLinks Discover - Fullstack Beginer",
+      "provider": "Rocketseat",
+      "date": "2024-11-11",
+      "hours": 12,
+      "tech": "HTML, CSS, JavaScript, Git, GitHub, Figma, Responsive Design, Frontend Development",
+      "repository": "https://github.com/thaisdMM/DevLinks-project-Rocketseat",
+      "demo": "https://thaisdmm.github.io/DevLinks-project-Rocketseat/",
+      "certificate": "assets/certificates/certificate-2024-11-11-discover-fullstack-rocketseat.pdf"
+    },
+    {
+      "title": "Java Backend",
+      "provider": "Rocketseat",
+      "date": "2024-10-19",
+      "hours": 5,
+      "tech": "Java, Spring Boot, REST API",
+      "repository": "https://github.com/thaisdMM/Java-To-Do-List-with-Spring-Boot",
+      "certificate": "assets/certificates/certificate-2024-10-19-java-backend-rocketseat.pdf"
+    },
+    {
+      "title": "PHP Development",
+      "provider": "Rocketseat",
+      "date": "2024-10-13",
+      "hours": 5,
+      "tech": "PHP, Laravel, MVC Architecture, Controllers, Models, Views, SQLite, Migrations, Factories, Seeders, Validations, Livewire",
+      "repository": "https://github.com/thaisdMM/Freelance-Hours-PHP-app",
+      "certificate": "assets/certificates/certificate-2024-10-13-php-development-rocketseat.pdf"
+    },
+    {
+      "title": "NLW Pocket: JavaScript",
+      "provider": "Rocketseat",
+      "date": "2024-09-15",
+      "hours": 5,
+      "tech": "JavaScript, Node.js, Variables, Operators, Data Types, Data Structures, Flow Control, Loops, Conditionals, Asynchrony, Inquirer Library",
+      "repository": "https://github.com/thaisdMM/nlw-17-trilha-iniciante",
+      "certificate": "assets/certificates/certificate-2024-09-15-nlw-pocket-javascript-rocketseat.pdf"
+    },
+    {
       "title": "Python Developer",
       "provider": "XPE",
-      "date": "Dec 20, 2022",
-      "hours": null,
-      "tech": "Python, OOP, Data Structures",
-      "repository": "https://github.com/thaisdMM/Python_Rocketseat",
-      "certificate": "assets/certificates/certificate-20-12-22-Python-Developer-rocketseat.pdf",
-      "recent": false
+      "date": "2022-12-20",
+      "hours": 148,
+      "tech": "Python, Object-Oriented Programming, Data Structures, Algorithms",
+      "certificate": "assets/certificates/certificate-2022-12-20-python-developer-xpe.pdf"
     },
     {
-      "id": 13,
       "title": "Beginner Software Programmer",
       "provider": "XPE",
-      "date": "Oct 20, 2022",
-      "hours": null,
-      "tech": "Programming Logic, Java, Python, HTML/CSS/JS",
-      "repository": "https://github.com/thaisdMM/Bootcamp-Programador-de-Software-Iniciante-Fa",
-      "certificate": "assets/certificates/certificate-20-10-22-beginner-software-programmer-XPE.pdf",
-      "recent": false
+      "date": "2022-10-20",
+      "hours": 148,
+      "tech": "Programming Logic, Java, Python, HTML, CSS, JavaScript, Software Fundamentals",
+      "repository": "https://github.com/thaisdMM/Bootcamp-Programador-de-Software-Iniciante-Faculdade-XPE",
+      "certificate": "assets/certificates/certificate-2022-10-20-beginner-software-programmer-xpe.pdf"
     }
   ],
   "contact": {
