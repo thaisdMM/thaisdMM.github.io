@@ -2,7 +2,7 @@
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-2563eb?style=for-the-badge&logo=github)](https://github.com/thaisdMM/thaisdMM.github.io)
 [![Live](https://img.shields.io/badge/Live-10b981?style=for-the-badge&logo=vercel)](https://thaisdmm.github.io/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077b5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/tha%C3%ADs-de-medeiros-moreira-59a28188/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077b5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/tha%C3%ADs-moreira-59a28188/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)](https://github.com/thaisdMM)
 
 > **Python Backend Developer** | Career transition from Law to Tech | 21 certifications
@@ -177,9 +177,9 @@ Seeking **Python Backend Developer** positions (junior/entry-level) where I can 
 ## 📫 Contact
 
 - **Portfolio:** [thaisdmm.github.io](https://thaisdmm.github.io/)
-- **LinkedIn:** [Thaís de Medeiros Moreira](https://www.linkedin.com/in/tha%C3%ADs-de-medeiros-moreira-59a28188/)
+- **LinkedIn:** [Thaís Moreira](https://www.linkedin.com/in/tha%C3%ADs-moreira-59a28188/)
 - **GitHub:** [@thaisdMM](https://github.com/thaisdMM)
-- **Email:** thaisdmm.contact@gmail.com
+- **Email:** thaisdmedeiros@gmail.com
 
 ---
 
