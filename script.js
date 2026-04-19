@@ -4,12 +4,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     const response = await fetch("data.json");
     const data = await response.json();
 
-    renderHeroBadges(data.hero.badges);
+    renderHero(data.hero);
     renderJourney(data.journey);
     renderSkills(data.skills);
     renderProjects(data.projects);
     renderCertificates(data.certificates);
     renderRecentCourses(data.certificates);
+    renderContact(data.contact);
   } catch (error) {
     console.error("Error loading portfolio data:", error);
   }
@@ -27,12 +28,33 @@ function sortCertificatesByDate(certificates) {
   return [...certificates].sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
-// Hero Badges
-function renderHeroBadges(badges) {
-  const container = document.getElementById("tech-badges");
-  container.innerHTML = badges
+// Hero Section
+function renderHero(hero) {
+  document.getElementById("hero-title").textContent = hero.name;
+  document.getElementById("hero-role").textContent = hero.role;
+  document.getElementById("hero-tagline").textContent = hero.tagline;
+  document.getElementById("hero-description").textContent = hero.description;
+
+  const badgeContainer = document.getElementById("tech-badges");
+  badgeContainer.innerHTML = hero.badges
     .map((badge) => `<span class="badge">${badge}</span>`)
     .join("");
+}
+
+// Contact & Opportunities Section
+function renderContact(contact) {
+  const oppDesc = document.getElementById("opp-description");
+  const oppStatus = document.getElementById("opp-status");
+
+  if (oppDesc) {
+    oppDesc.textContent = contact.opportunities.description;
+  }
+
+  if (oppStatus) {
+    oppStatus.innerHTML = contact.opportunities.status
+      .map((status) => `<span class="status-badge">✓ ${status}</span>`)
+      .join("");
+  }
 }
 
 // Journey Cards

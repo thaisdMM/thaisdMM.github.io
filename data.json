@@ -1,6 +1,18 @@
 {
   "hero": {
-    "badges": ["Python", "Django", "Flask", "SQL", "Clean Code", "RESTful APIs"]
+    "name": "Thaís Moreira",
+    "role": "Python Backend Developer",
+    "tagline": "Bridging Legal Precision with Backend Architecture",
+    "description": "Former lawyer with a postgraduate degree in Civil Law transitioning into backend development. Currently specializing in building high-quality RESTful APIs with Django and Flask, applying clean architecture and professional engineering standards.",
+    "badges": [
+      "Python",
+      "Django",
+      "DRF",
+      "Flask",
+      "PostgreSQL",
+      "Clean Code",
+      "Automated Testing"
+    ]
   },
   "journey": [
     {
@@ -23,12 +35,12 @@
     {
       "icon": "🐍",
       "category": "Backend & Languages",
-      "tags": ["Python", "OOP", "Django", "Flask", "FastAPI (basics)"]
+      "tags": ["Python", "OOP", "Django", "Django REST Framework (DRF)", "Flask", "FastAPI (basics)"]
     },
     {
       "icon": "🗄️",
       "category": "Databases",
-      "tags": ["SQLite", "PostgreSQL", "SQLAlchemy"]
+      "tags": ["SQLite", "PostgreSQL", "SQLAlchemy", "Data Modeling"]
     },
     {
       "icon": "🌐",
@@ -42,8 +54,10 @@
         "Git",
         "GitHub",
         "Clean Code",
+        "SOLID",
+        "Repository Pattern",
         "Pytest",
-        "Docker (learning)",
+        "Docker (basics)",
         "JWT"
       ]
     },
@@ -60,11 +74,34 @@
   ],
   "projects": [
     {
+      "title": "NLW Operator - Computer Vision",
+      "description": "Advanced computer vision monorepo featuring a LeNet-5 CNN implementation for MNIST, a custom gesture recognition lab with MediaPipe and YOLO, and a real-time web application built with FastHTML and WebSockets for low-latency video processing.",
+      "tech": ["Python", "FastHTML", "PyTorch", "MediaPipe", "OpenCV", "YOLO", "Scikit-Learn"],
+      "github": "https://github.com/thaisdMM/NLW-Operator-Computer-Vision-Python",
+      "featured": true,
+      "hasLiveDemo": false
+    },
+    {
+      "title": "School Manager API - DRF",
+      "description": "Educational management system built with Django REST Framework. Features complex data relationships, API versioning, custom filtering, pagination, and robust input validation.",
+      "tech": ["Python", "Django", "DRF", "PostgreSQL", "API Versioning", "Filtering"],
+      "github": "https://github.com/thaisdMM/school-manager-api-rest-django",
+      "featured": true,
+      "hasLiveDemo": false
+    },
+    {
+      "title": "Alura Space - Django Architecture & Refactor",
+      "description": "Comprehensive gallery application featuring a high-impact personal initiative refactor. Eliminated 70% of code duplication using DRY principles, implemented a hierarchical template inheritance system, and established professional standards through Conventional Commits.",
+      "tech": ["Python", "Django", "PostgreSQL", "Template Architecture", "Clean Code", "Conventional Commits"],
+      "github": "https://github.com/thaisdMM/alura_space/tree/refactor/project-structure",
+      "featured": true,
+      "hasLiveDemo": false
+    },
+    {
       "title": "SecureBank API - JWT Authentication",
       "description": "Banking authentication API implementing JWT tokens and Argon2 password hashing. Features user authentication, secure password storage, and automated testing with Pytest.",
       "tech": ["Python", "Flask", "JWT", "Argon2", "SQLAlchemy", "Pytest"],
       "github": "https://github.com/thaisdMM/SecureBank-API-JWT-e-Argon2-Study",
-      "demo": null,
       "featured": true,
       "hasLiveDemo": false
     },
@@ -73,7 +110,6 @@
       "description": "RESTful API built with Flask following clean architecture principles, featuring user management with SQLAlchemy ORM and comprehensive test coverage.",
       "tech": ["Python", "Flask", "SQLAlchemy", "Pytest", "SQLite"],
       "github": "https://github.com/thaisdMM/clean_code_project2",
-      "demo": null,
       "featured": true,
       "hasLiveDemo": false
     },
@@ -82,46 +118,38 @@
       "description": "Event registration API with referral tracking system. Users generate referral links and earn points when others register using their links.",
       "tech": ["Python", "Flask", "SQLAlchemy", "SQLite", "REST API"],
       "github": "https://github.com/thaisdMM/nlw-19-connect-python",
-      "demo": "https://thaisdmm.github.io/nlw-19-connect-full-stack/",
-      "featured": true,
-      "hasLiveDemo": true
-    },
-    {
-      "title": "Alura Space - Django Web Application",
-      "description": "Django web application with templates, admin interface, database integration, image handling, and search filters. Demonstrates fundamental Django concepts and project organization.",
-      "tech": [
-        "Python",
-        "Django",
-        "PostgreSQL",
-        "SQLite",
-        "Templates",
-        "Admin Interface"
-      ],
-      "github": "https://github.com/thaisdMM/alura_space",
-      "demo": null,
-      "featured": true,
-      "hasLiveDemo": false
-    },
-    {
-      "title": "School Management System",
-      "description": "CLI-based academic records management system with student registration, subject assignment, and grade tracking using JSON file storage.",
-      "tech": ["Python", "OOP", "JSON", "Modular Design"],
-      "github": "https://github.com/thaisdMM/school-management-system",
-      "demo": null,
-      "featured": true,
-      "hasLiveDemo": false
-    },
-    {
-      "title": "NLW Agents - AI Integration",
-      "description": "Full-stack application with Node.js backend (Express, Prisma, PostgreSQL) and React frontend, integrating OpenAI API for intelligent agent capabilities.",
-      "tech": ["TypeScript", "Node.js", "React", "PostgreSQL", "OpenAI API"],
-      "github": "https://github.com/thaisdMM/nlw-20-agents-server-intermediate",
-      "githubFrontend": "https://github.com/thaisdMM/nlw-20-agents-web-intermediate",
       "featured": true,
       "hasLiveDemo": false
     }
   ],
   "certificates": [
+    {
+      "title": "Django REST Framework: API Development and Best Practices",
+      "provider": "Alura",
+      "date": "2026-03-26",
+      "hours": 10,
+      "tech": "Django, Django REST Framework, DRF, Serializers, ViewSets, API Versioning, Pagination, Filtering, Custom Validations, Authentication",
+      "repository": "https://github.com/thaisdMM/school-manager-api-rest-django",
+      "certificate": "assets/certificates/certificate-2026-03-26-django-rest-framework-alura.pdf"
+    },
+    {
+      "title": "NLW Operator: Computer Vision",
+      "provider": "Rocketseat",
+      "date": "2026-03-19",
+      "hours": 5,
+      "tech": "Python, Computer Vision, MediaPipe, OpenCV, FastHTML, PyTorch, CNN, LeNet-5, YOLO, Gemini API, Scikit-Learn",
+      "repository": "https://github.com/thaisdMM/NLW-Operator-Computer-Vision-Python",
+      "certificate": "assets/certificates/certificate-2026-03-19-nlw-operator-python-rocketseat.pdf"
+    },
+    {
+      "title": "Django: Forms, Authentication and Alerts",
+      "provider": "Alura",
+      "date": "2026-03-05",
+      "hours": 8,
+      "tech": "Django, Django Forms, Authentication, CSRF Protection, Form Validation, User Management, Partials, Dynamic Alerts, Feedback Messages",
+      "repository": "https://github.com/thaisdMM/alura_space/tree/django-autenticacao-formularios-alerta",
+      "certificate": "assets/certificates/certificate-2026-03-05-django-forms-authentication-alerts-alura.pdf"
+    },
     {
       "title": "JWT Authentication and Security",
       "provider": "Rocketseat",
@@ -319,10 +347,9 @@
     "linkedin": "https://www.linkedin.com/in/tha%C3%ADs-moreira-59a28188/",
     "github": "https://github.com/thaisdMM",
     "email": "thaisdmedeiros@gmail.com",
-    "availability": {
-      "status": "Available immediately",
-      "relocation": "Open to relocation",
-      "remote": "Remote-friendly"
+    "opportunities": {
+      "description": "Currently seeking junior backend Python positions.",
+      "status": ["Available immediately", "Remote-friendly"]
     }
   }
 }
