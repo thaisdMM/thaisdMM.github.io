@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     renderHero(data.hero);
     renderJourney(data.journey);
+    renderLearning(data.learning);
     renderSkills(data.skills);
     renderProjects(data.projects);
     renderCertificates(data.certificates);
@@ -33,7 +34,14 @@ function renderHero(hero) {
   document.getElementById("hero-title").textContent = hero.name;
   document.getElementById("hero-role").textContent = hero.role;
   document.getElementById("hero-tagline").textContent = hero.tagline;
-  document.getElementById("hero-description").textContent = hero.description;
+  const descEl = document.getElementById("hero-description");
+  if (Array.isArray(hero.description)) {
+    descEl.innerHTML = hero.description
+      .map((p) => `<p style="margin-bottom: 1rem;">${p}</p>`)
+      .join("");
+  } else {
+    descEl.textContent = hero.description;
+  }
 
   const badgeContainer = document.getElementById("tech-badges");
   badgeContainer.innerHTML = hero.badges
@@ -41,18 +49,50 @@ function renderHero(hero) {
     .join("");
 }
 
-// Contact & Opportunities Section
+// Contact, Footer & Opportunities Section
 function renderContact(contact) {
+  // Update Opportunity Info
   const oppDesc = document.getElementById("opp-description");
   const oppStatus = document.getElementById("opp-status");
 
-  if (oppDesc) {
-    oppDesc.textContent = contact.opportunities.description;
-  }
-
+  if (oppDesc) oppDesc.textContent = contact.opportunities.description;
   if (oppStatus) {
     oppStatus.innerHTML = contact.opportunities.status
       .map((status) => `<span class="status-badge">✓ ${status}</span>`)
+      .join("");
+  }
+
+  // Update All Social/Contact Links (Hero & Footer)
+  const links = {
+    "link-linkedin": contact.linkedin,
+    "link-github": contact.github,
+    "link-email": `mailto:${contact.email}`,
+    "footer-linkedin": contact.linkedin,
+    "footer-github": contact.github,
+    "footer-email": `mailto:${contact.email}`,
+  };
+
+  for (const [id, url] of Object.entries(links)) {
+    const el = document.getElementById(id);
+    if (el) el.href = url;
+  }
+
+  // Update Copyright Year
+  const yearEl = document.getElementById("current-year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+}
+
+// Learning Section
+function renderLearning(learning) {
+  const title = document.getElementById("learning-title");
+  const desc = document.getElementById("learning-description");
+  const nextSteps = document.getElementById("learning-next-steps");
+
+  if (title) title.textContent = learning.title;
+  if (desc) desc.textContent = learning.description;
+  if (nextSteps) {
+    nextSteps.innerHTML = learning.nextSteps
+      .map((step) => `<span class="next-step-badge">${step}</span>`)
       .join("");
   }
 }

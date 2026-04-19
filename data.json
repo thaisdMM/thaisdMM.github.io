@@ -3,7 +3,10 @@
     "name": "Thaís Moreira",
     "role": "Python Backend Developer",
     "tagline": "Bridging Legal Precision with Backend Architecture",
-    "description": "Former lawyer with a postgraduate degree in Civil Law transitioning into backend development. Currently specializing in building high-quality RESTful APIs with Django and Flask, applying clean architecture and professional engineering standards.",
+    "description": [
+      "Former lawyer with a postgraduate degree in Civil Law transitioning into backend development.",
+      "Currently specializing in building high-quality RESTful APIs with Django and Flask, applying clean architecture and professional engineering standards."
+    ],
     "badges": [
       "Python",
       "Django",
@@ -11,7 +14,7 @@
       "Flask",
       "PostgreSQL",
       "Clean Code",
-      "Automated Testing"
+      "Pytest / Automated Testing"
     ]
   },
   "journey": [
@@ -31,6 +34,16 @@
       "description": "Completed 20+ technical certifications and currently advancing through Alura's comprehensive Backend Python Career Track with hands-on projects."
     }
   ],
+  "learning": {
+    "title": "Alura - Backend Python Career Track",
+    "description": "Comprehensive backend development path covering APIs with Django and Flask, clean architecture, CI/CD, and real-world market challenges.",
+    "nextSteps": [
+      "Docker & Containerization",
+      "CI/CD Pipelines",
+      "Advanced Testing with Pytest",
+      "Cloud Fundamentals (AWS/GCP)"
+    ]
+  },
   "skills": [
     {
       "icon": "🐍",

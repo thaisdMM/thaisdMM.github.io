@@ -231,9 +231,28 @@ section:nth-child(even) {
   margin-bottom: 1rem;
 }
 
-.learning-next-steps {
-  margin-top: 1rem;
-  color: #78350f;
+.learning-next {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #f59e0b;
+}
+
+.next-steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.next-step-badge {
+  background: white;
+  color: #92400e;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid #fde68a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .course-list {
