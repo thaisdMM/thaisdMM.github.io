@@ -48,7 +48,14 @@
     {
       "icon": "🐍",
       "category": "Backend & Languages",
-      "tags": ["Python", "OOP", "Django", "Django REST Framework (DRF)", "Flask", "FastAPI (basics)"]
+      "tags": [
+        "Python",
+        "OOP",
+        "Django",
+        "Django REST Framework (DRF)",
+        "Flask",
+        "FastAPI (basics)"
+      ]
     },
     {
       "icon": "🗄️",
@@ -87,17 +94,44 @@
   ],
   "projects": [
     {
-      "title": "NLW Operator - Computer Vision",
-      "description": "Advanced computer vision monorepo featuring a LeNet-5 CNN implementation for MNIST, a custom gesture recognition lab with MediaPipe and YOLO, and a real-time web application built with FastHTML and WebSockets for low-latency video processing.",
-      "tech": ["Python", "FastHTML", "PyTorch", "MediaPipe", "OpenCV", "YOLO", "Scikit-Learn"],
-      "github": "https://github.com/thaisdMM/NLW-Operator-Computer-Vision-Python",
+      "title": "SkillBridge - Freelancer Marketplace Platform",
+      "description": "Freelancer marketplace backend built with Django, targeting the European job market. Custom three-way user architecture (Freelancer/Client/StaffUser via Abstract Base Classes), GDPR-aligned logging, and a continuously growing automated test suite enforced by CI. Currently in active development, with accounts and profiles fully implemented.",
+      "tech": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "Docker",
+        "Pytest",
+        "GitHub Actions",
+        "Argon2id"
+      ],
+      "github": "https://github.com/thaisdMM/skillbridge",
       "featured": true,
-      "hasLiveDemo": false
+      "hasLiveDemo": false,
+      "badges": [
+        {
+          "image": "https://github.com/thaisdMM/skillbridge/actions/workflows/ci.yml/badge.svg",
+          "link": "https://github.com/thaisdMM/skillbridge/actions/workflows/ci.yml",
+          "alt": "CI status"
+        },
+        {
+          "image": "https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/thaisdMM/ae3f8ce794a99531a58a906e10095831/raw/tests-badge.json",
+          "link": "https://github.com/thaisdMM/skillbridge/actions/workflows/ci.yml",
+          "alt": "Tests passing"
+        }
+      ]
     },
     {
       "title": "School Manager API - DRF",
       "description": "Educational management system built with Django REST Framework. Features complex data relationships, API versioning, custom filtering, pagination, and robust input validation.",
-      "tech": ["Python", "Django", "DRF", "PostgreSQL", "API Versioning", "Filtering"],
+      "tech": [
+        "Python",
+        "Django",
+        "DRF",
+        "PostgreSQL",
+        "API Versioning",
+        "Filtering"
+      ],
       "github": "https://github.com/thaisdMM/school-manager-api-rest-django",
       "featured": true,
       "hasLiveDemo": false
@@ -105,7 +139,14 @@
     {
       "title": "Alura Space - Django Architecture & Refactor",
       "description": "Comprehensive gallery application featuring a high-impact personal initiative refactor. Eliminated 70% of code duplication using DRY principles, implemented a hierarchical template inheritance system, and established professional standards through Conventional Commits.",
-      "tech": ["Python", "Django", "PostgreSQL", "Template Architecture", "Clean Code", "Conventional Commits"],
+      "tech": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "Template Architecture",
+        "Clean Code",
+        "Conventional Commits"
+      ],
       "github": "https://github.com/thaisdMM/alura_space/tree/refactor/project-structure",
       "featured": true,
       "hasLiveDemo": false
@@ -127,15 +168,39 @@
       "hasLiveDemo": false
     },
     {
-      "title": "DevStage - Event Registration System",
-      "description": "Event registration API with referral tracking system. Users generate referral links and earn points when others register using their links.",
-      "tech": ["Python", "Flask", "SQLAlchemy", "SQLite", "REST API"],
-      "github": "https://github.com/thaisdMM/nlw-19-connect-python",
+      "title": "NLW Operator - Computer Vision",
+      "description": "Advanced computer vision monorepo featuring a LeNet-5 CNN implementation for MNIST, a custom gesture recognition lab with MediaPipe and YOLO, and a real-time web application built with FastHTML and WebSockets for low-latency video processing.",
+      "tech": [
+        "Python",
+        "FastHTML",
+        "PyTorch",
+        "MediaPipe",
+        "OpenCV",
+        "YOLO",
+        "Scikit-Learn"
+      ],
+      "github": "https://github.com/thaisdMM/NLW-Operator-Computer-Vision-Python",
       "featured": true,
       "hasLiveDemo": false
     }
   ],
   "certificates": [
+    {
+      "title": "AI Literacy: Essential Skills and Critical Mastery",
+      "provider": "Alura",
+      "date": "2026-06-05",
+      "hours": 6,
+      "tech": "AI Fundamentals and Impacts, Generative AI Mechanisms, Use Cases and Limitations, Prompt Interaction, Bias and Critical Analysis, AI Security and Privacy, Machine Learning and Deep Learning, LGPD Compliance",
+      "certificate": "assets/certificates/certificate-2026-06-05-ai-literacy-essential-skills-critical-mastery-alura.pdf"
+    },
+    {
+      "title": "Prompt Engineering: Creating Effective Prompts for Generative AI",
+      "provider": "Alura",
+      "date": "2026-05-29",
+      "hours": 6,
+      "tech": "Initial Concepts, Prompt Engineering, Few-Shot Prompting, Chain-of-Thought Prompting, Advanced Prompt Techniques, Tokens, Chain-of-Verification",
+      "certificate": "assets/certificates/certificate-2026-05-29-prompt-engineering-generative-ai-alura.pdf"
+    },
     {
       "title": "Django REST Framework: API Development and Best Practices",
       "provider": "Alura",
