@@ -166,6 +166,16 @@ function renderProjects(projects) {
             </div>
             <div class="project-body">
                 <p class="project-description">${project.description}</p>
+                ${
+                  project.badges
+                    ? `<div class="project-live-badges">${project.badges
+                        .map(
+                          (badge) =>
+                            `<a href="${badge.link}" target="_blank"><img src="${badge.image}" alt="${badge.alt}"></a>`,
+                        )
+                        .join("")}</div>`
+                    : ""
+                }
                 <div class="project-tech">
                     ${project.tech.map((tech) => `<span class="tech-badge">${tech}</span>`).join("")}
                 </div>
