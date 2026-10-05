@@ -153,10 +153,21 @@ function renderSkills(skills) {
 
 // Projects Grid
 function renderProjects(projects) {
-  const container = document.getElementById("projects-grid");
-  const featuredProjects = projects.filter((p) => p.featured);
+  const featured = projects.filter((p) => p.featured);
+  renderProjectGrid(
+    "projects-grid",
+    featured.filter((p) => p.category === "personal"),
+  );
+  renderProjectGrid(
+    "course-projects-grid",
+    featured.filter((p) => p.category === "course"),
+  );
+}
 
-  container.innerHTML = featuredProjects
+function renderProjectGrid(containerId, projectList) {
+  const container = document.getElementById(containerId);
+
+  container.innerHTML = projectList
     .map(
       (project) => `
         <div class="project-card">
