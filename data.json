@@ -1,20 +1,22 @@
 {
   "hero": {
     "name": "Thaís Moreira",
-    "role": "Python Backend Developer",
+    "role": "Python Developer",
     "tagline": "Bridging Legal Precision with Backend Architecture",
     "description": [
-      "Former lawyer with a postgraduate degree in Civil Law transitioning into backend development.",
-      "Currently specializing in building high-quality RESTful APIs with Django and Flask, applying clean architecture and professional engineering standards."
+      "Former lawyer with a postgraduate degree in Civil Law, now a Python developer focused on backend.",
+      "Building Django and PostgreSQL projects with automated testing, Docker and CI/CD. Nine years of legal practice taught me to turn client needs into concrete requirements, the same work I now do against code."
     ],
     "badges": [
       "Python",
       "Django",
       "DRF",
-      "Flask",
       "PostgreSQL",
-      "Clean Code",
-      "Pytest / Automated Testing"
+      "SQL",
+      "REST APIs",
+      "Pytest",
+      "Docker",
+      "CI/CD"
     ]
   },
   "journey": [
@@ -31,53 +33,79 @@
     {
       "icon": "🎯",
       "title": "Focused Learning",
-      "description": "Completed 20+ technical certifications and currently advancing through Alura's comprehensive Backend Python Career Track with hands-on projects."
+      "description": "Completed 25+ technical certifications and currently advancing through Alura's comprehensive Backend Python Career Track, while building hands-on projects of my own."
     }
   ],
   "learning": {
     "title": "Alura - Backend Python Career Track",
     "description": "Comprehensive backend development path covering APIs with Django and Flask, clean architecture, CI/CD, and real-world market challenges.",
     "nextSteps": [
-      "Docker & Containerization",
-      "CI/CD Pipelines",
-      "Advanced Testing with Pytest",
-      "Cloud Fundamentals (AWS/GCP)"
+      "Cloud Fundamentals (AWS)",
+      "Data Structures & Algorithms",
+      "Agile/Scrum"
     ]
   },
   "skills": [
     {
       "icon": "🐍",
-      "category": "Backend & Languages",
+      "category": "Backend",
       "tags": [
         "Python",
         "OOP",
         "Django",
+        "Django ORM",
         "Django REST Framework (DRF)",
-        "Flask",
-        "FastAPI (basics)"
+        "REST APIs",
+        "Argon2id"
       ]
     },
     {
       "icon": "🗄️",
       "category": "Databases",
-      "tags": ["SQLite", "PostgreSQL", "SQLAlchemy", "Data Modeling"]
+      "tags": [
+        "PostgreSQL",
+        "SQL (joins, aggregations)",
+        "Relational Data Modeling",
+        "Neon PostgreSQL"
+      ]
     },
     {
-      "icon": "🌐",
-      "category": "Web Technologies",
-      "tags": ["HTML5", "CSS3", "JavaScript", "RESTful APIs"]
+      "icon": "✅",
+      "category": "Testing & Quality",
+      "tags": [
+        "Pytest",
+        "Ruff",
+        "mypy"
+      ]
     },
     {
       "icon": "🛠️",
       "category": "Tools & Practices",
       "tags": [
+        "CI/CD",
+        "GitHub Actions",
+        "Docker",
+        "Docker Compose",
         "Git",
         "GitHub",
+        "Render",
+        "uv",
+        "Secret scanning (Gitleaks)",
+        "Dependabot",
+        "ADRs",
+        "AI-assisted development with manual review",
         "Clean Code",
         "SOLID",
-        "Repository Pattern",
-        "Pytest",
-        "Docker (basics)",
+        "Repository Pattern"
+      ]
+    },
+    {
+      "icon": "📚",
+      "category": "Coursework & Self-study",
+      "tags": [
+        "Flask",
+        "SQLAlchemy",
+        "FastAPI (basics)",
         "JWT"
       ]
     },
@@ -90,12 +118,22 @@
         "Communication",
         "Critical Thinking"
       ]
+    },
+    {
+      "icon": "🌍",
+      "category": "Languages",
+      "tags": [
+        "Portuguese (native)",
+        "English (B2)",
+        "German (A2)",
+        "French (A2)"
+      ]
     }
   ],
   "projects": [
     {
-      "title": "SkillBridge - Freelancer Marketplace Platform",
-      "description": "Freelancer marketplace backend built with Django, targeting the European job market. Custom three-way user architecture (Freelancer/Client/StaffUser via Abstract Base Classes), GDPR-aligned logging, and a continuously growing automated test suite enforced by CI. Currently in active development, with accounts and profiles fully implemented.",
+      "title": "SkillBridge - Freelancer Platform Backend (in progress)",
+      "description": "First modules of a freelancing-platform backend: accounts and profiles with a custom user model (email login), abstract base models, one-to-one and many-to-many relations, custom validators and admin panel, with check and unique constraints enforced in the database. Covered by 304 automated tests and a four-job GitHub Actions CI: tests against PostgreSQL with a 95% coverage gate, Ruff and strict mypy, Docker image build and full-history secret scanning (Gitleaks). Passwords hashed with Argon2id.",
       "tech": [
         "Python",
         "Django",
@@ -103,6 +141,9 @@
         "Docker",
         "Pytest",
         "GitHub Actions",
+        "mypy",
+        "Ruff",
+        "Gitleaks",
         "Argon2id"
       ],
       "github": "https://github.com/thaisdMM/skillbridge",
@@ -119,53 +160,94 @@
           "link": "https://github.com/thaisdMM/skillbridge/actions/workflows/ci.yml",
           "alt": "Tests passing"
         }
-      ]
+      ],
+      "category": "personal"
     },
     {
-      "title": "School Manager API - DRF",
-      "description": "Educational management system built with Django REST Framework. Features complex data relationships, API versioning, custom filtering, pagination, and robust input validation.",
+      "title": "Medication Log API (in progress)",
+      "description": "Delivery path in place before the first feature: multi-stage, non-root production image served by Granian, deployed on Render with Neon PostgreSQL behind a health-check endpoint, with automatic deploys once CI passes. Local environment with Docker Compose (the app only starts when PostgreSQL is healthy) and a three-job CI: lint, formatting and strict type checking; tests against PostgreSQL with a pending-migrations check; and production image build.",
+      "tech": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "Docker",
+        "Docker Compose",
+        "uv",
+        "GitHub Actions",
+        "Render",
+        "Neon"
+      ],
+      "github": "https://github.com/thaisdMM/medication-log-api",
+      "demo": "https://medication-log-api.onrender.com/healthz/",
+      "featured": true,
+      "hasLiveDemo": false,
+      "category": "personal"
+    },
+    {
+      "title": "School Manager API - Django REST Framework",
+      "description": "REST API with Django REST Framework: CRUD endpoints for students, courses and enrollments, enrollment listings per student and per course, and reusable custom validators (CPF, name, phone) applied at model and serializer level.",
       "tech": [
         "Python",
         "Django",
         "DRF",
-        "PostgreSQL",
-        "API Versioning",
-        "Filtering"
+        "SQLite",
+        "Custom Validators"
       ],
       "github": "https://github.com/thaisdMM/school-manager-api-rest-django",
       "featured": true,
-      "hasLiveDemo": false
+      "hasLiveDemo": false,
+      "category": "course"
     },
     {
       "title": "Alura Space - Django Architecture & Refactor",
-      "description": "Comprehensive gallery application featuring a high-impact personal initiative refactor. Eliminated 70% of code duplication using DRY principles, implemented a hierarchical template inheritance system, and established professional standards through Conventional Commits.",
+      "description": "Space-photo gallery built following three Alura Django courses, one per branch (templates, data persistence and admin, forms and authentication). After the courses, I refactored the project on my own initiative: a hierarchical template inheritance structure and reusable partials cut about 70% of duplicated HTML, added search by name and category, and adopted Conventional Commits.",
       "tech": [
         "Python",
         "Django",
-        "PostgreSQL",
-        "Template Architecture",
-        "Clean Code",
+        "SQLite",
+        "Django Admin",
+        "Django Forms",
+        "Authentication",
+        "Template Inheritance",
         "Conventional Commits"
       ],
       "github": "https://github.com/thaisdMM/alura_space/tree/refactor/project-structure",
       "featured": true,
-      "hasLiveDemo": false
+      "hasLiveDemo": false,
+      "category": "course"
     },
     {
       "title": "SecureBank API - JWT Authentication",
-      "description": "Banking authentication API implementing JWT tokens and Argon2 password hashing. Features user authentication, secure password storage, and automated testing with Pytest.",
-      "tech": ["Python", "Flask", "JWT", "Argon2", "SQLAlchemy", "Pytest"],
+      "description": "Flask REST API for user registration, login and balance updates, built following a Rocketseat course. Authentication uses JWT, with a middleware that checks the token's user against the request. I replaced the course's bcrypt with Argon2 for password hashing. Includes unit tests with Pytest.",
+      "tech": [
+        "Python",
+        "Flask",
+        "JWT",
+        "Argon2",
+        "SQLite",
+        "Pytest"
+      ],
       "github": "https://github.com/thaisdMM/SecureBank-API-JWT-e-Argon2-Study",
       "featured": true,
-      "hasLiveDemo": false
+      "hasLiveDemo": false,
+      "category": "course"
     },
     {
       "title": "Clean Code Flask API",
-      "description": "RESTful API built with Flask following clean architecture principles, featuring user management with SQLAlchemy ORM and comprehensive test coverage.",
-      "tech": ["Python", "Flask", "SQLAlchemy", "Pytest", "SQLite"],
+      "description": "REST API with Flask organized in layers: controllers, repositories, views and validators. Uses interfaces and dependency injection, custom HTTP exceptions, input validation, and unit tests for controllers and the repository. Built following a course on clean code, MVC and SOLID.",
+      "tech": [
+        "Python",
+        "Flask",
+        "SQLAlchemy",
+        "Pytest",
+        "SQLite",
+        "MVC",
+        "Dependency Injection"
+      ],
       "github": "https://github.com/thaisdMM/clean_code_project2",
       "featured": true,
-      "hasLiveDemo": false
+      "hasLiveDemo": false,
+      "category": "course"
     },
     {
       "title": "NLW Operator - Computer Vision",
@@ -180,8 +262,9 @@
         "Scikit-Learn"
       ],
       "github": "https://github.com/thaisdMM/NLW-Operator-Computer-Vision-Python",
-      "featured": true,
-      "hasLiveDemo": false
+      "featured": false,
+      "hasLiveDemo": false,
+      "category": "course"
     }
   ],
   "certificates": [
@@ -324,7 +407,7 @@
       "provider": "Rocketseat",
       "date": "2025-10-26",
       "hours": 13,
-      "tech": "Python, Clean Architecture, MVC Architecture, SOLID Principles, Interfaces, Dependency Injection, Error Handling, Custom Exceptions, Pydantic, Unit Testing, Mocks, Requirements.txt",
+      "tech": "Python, MVC Architecture, SOLID Principles (SRP, DIP), Interfaces, Dependency Injection, Decoupled Controllers, Error Handling, Custom Exceptions, Pydantic, Unit Testing, Mocks, Requirements.txt, Modular Organization",
       "repository": "https://github.com/thaisdMM/clean_code_project2",
       "certificate": "assets/certificates/certificate-2025-10-26-clean-code-python-rocketseat.pdf"
     },
@@ -427,7 +510,10 @@
     "email": "thaisdmedeiros@gmail.com",
     "opportunities": {
       "description": "Currently seeking junior backend Python positions.",
-      "status": ["Available immediately", "Remote-friendly"]
+      "status": [
+        "Available immediately",
+        "Remote or on-site (Belo Horizonte, Lisbon)"
+      ]
     }
   }
 }
