@@ -5,13 +5,13 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077b5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/tha%C3%ADs-moreira-59a28188/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)](https://github.com/thaisdMM)
 
-> **Python Backend Developer** | Career transition from Law to Tech | 21 certifications
+> **Python Developer** | Career transition from Law to Tech | 25+ certifications
 
 ---
 
 ## 🎯 About This Portfolio
 
-This portfolio showcases my journey as a **Python Backend Developer** with hands-on experience in **Django**, **Flask**, and **FastAPI**. Building production-ready applications while continuously expanding my skills through structured learning and real-world projects.
+This portfolio showcases my journey as a **Python Developer** focused on backend, with projects in **Django**, **Django REST Framework** and **PostgreSQL**, automated testing, **Docker** and **CI/CD**. Flask and FastAPI (basics) come from coursework. I keep expanding my skills through structured learning and projects of my own.
 
 🌐 **Live Site:** [https://thaisdmm.github.io/](https://thaisdmm.github.io/)
 
@@ -34,7 +34,7 @@ This portfolio showcases my journey as a **Python Backend Developer** with hands
 📊 **Organized Sections**
 
 - Transition journey storytelling
-- Featured projects with live demos
+- Personal projects and course-based projects, in separate sections
 - Technical skills breakdown
 - Certifications with repositories
 - Current learning status
@@ -83,14 +83,14 @@ Clean separation of concerns: HTML (structure), CSS (styles), JavaScript (logic)
 
 **From Law to Tech:** Bachelor's and Postgraduate in Civil Law (PUC Minas), now applying analytical thinking and problem-solving skills to backend development.
 
-**Current Focus:** Python backend development with Django, Flask, and RESTful APIs. Actively building projects that demonstrate clean architecture and test-driven development.
+**Current Focus:** Python backend development with Django, Django REST Framework and PostgreSQL. Building projects of my own with automated testing, Docker and CI/CD.
 
 **Learning Path:**
 
-- ✅ 21+ technical certifications (Alura, Rocketseat, XPE)
+- ✅ 25+ technical certifications (Alura, Rocketseat, XPE)
 - ✅ Hands-on projects with real-world applications
-- ✅ Daily practice with Git, pytest, and deployment workflows
-- 🎯 Currently: Django authentication systems and Docker containerization
+- ✅ Daily practice with Git, pytest, Docker and CI/CD workflows
+- 🎯 Currently: SkillBridge (freelancer platform backend) and Medication Log API, both in progress, plus SQL (joins and aggregations)
 
 ---
 
@@ -98,17 +98,19 @@ Clean separation of concerns: HTML (structure), CSS (styles), JavaScript (logic)
 
 View all projects with live demos and detailed documentation on the [portfolio website](https://thaisdmm.github.io/) or browse the [GitHub repositories](https://github.com/thaisdMM?tab=repositories).
 
-**Highlights:** Django web applications, Flask APIs with clean architecture, authentication systems with JWT, and full-stack JavaScript projects.
+**Personal projects:** SkillBridge (Django backend, in progress) and Medication Log API (Django, Docker, deployed on Render, in progress).
+
+**Course-based projects:** School Manager API (Django REST Framework), Alura Space (Django, with my own refactor), SecureBank API (Flask, JWT, Argon2) and a layered Flask API.
 
 ---
 
 ## 📜 Certifications
 
-**21 technical certifications** covering Python, Django, Flask, Git, Clean Code, and full-stack development.
+**25+ technical certifications** covering Python, Django, Django REST Framework, Flask, Git, Clean Code, JWT and AI literacy.
 
 View all certificates with repositories on the [portfolio website](https://thaisdmm.github.io/#certificates).
 
-**Recent focus:** Django (templates, admin, data persistence), JWT authentication, advanced OOP, and API consumption.
+**Recent focus:** Django REST Framework, Django (templates, admin, data persistence), JWT authentication and security, and data persistence with databases.
 
 ---
 
@@ -168,9 +170,9 @@ http-server
 
 Seeking **Python Backend Developer** positions (junior/entry-level) where I can contribute to meaningful projects while growing professionally.
 
-**Tech Stack:** Python • Django • Flask • PostgreSQL • REST APIs • Git • Docker • JWT
+**Tech Stack:** Python • Django • Django REST Framework • PostgreSQL • SQL • REST APIs • Pytest • Docker • CI/CD (GitHub Actions) • Git
 
-**Work Preferences:** Remote preferred • Available immediately
+**Work Preferences:** Remote or on-site (Belo Horizonte, Lisbon) • Available immediately
 
 ---
 
@@ -187,7 +189,7 @@ Seeking **Python Backend Developer** positions (junior/entry-level) where I can 
 
 This project is open source and available for educational purposes.
 
-© 2024 Thaís Moreira. All rights reserved.
+© 2026 Thaís Moreira. All rights reserved.
 
 ---
 
