@@ -1,7 +1,7 @@
 {
   "hero": {
-    "name": "Thaís Moreira",
-    "role": "Python Developer",
+    "name": "Thaís de Medeiros Moreira",
+    "role": "Junior Python Developer",
     "tagline": "Bridging Legal Precision with Backend Architecture",
     "description": [
       "Former lawyer with a postgraduate degree in Civil Law, now a Python developer focused on backend.",
@@ -509,7 +509,7 @@
     "github": "https://github.com/thaisdMM",
     "email": "thaisdmedeiros@gmail.com",
     "opportunities": {
-      "description": "Currently seeking junior backend Python positions.",
+      "description": "Currently seeking junior Python Developer positions.",
       "status": [
         "Available immediately",
         "Remote or on-site (Belo Horizonte, Lisbon)"
