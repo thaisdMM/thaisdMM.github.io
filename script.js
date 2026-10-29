@@ -5,12 +5,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     const data = await response.json();
 
     renderHero(data.hero);
-    renderJourney(data.journey);
-    renderLearning(data.learning);
-    renderSkills(data.skills);
     renderProjects(data.projects);
+    renderSkills(data.skills);
+    renderBackground(data.background);
+    renderCurrently(data.current);
     renderCertificates(data.certificates);
-    renderRecentCourses(data.certificates);
     renderContact(data.contact);
   } catch (error) {
     console.error("Error loading portfolio data:", error);
@@ -33,11 +32,10 @@ function sortCertificatesByDate(certificates) {
 function renderHero(hero) {
   document.getElementById("hero-title").textContent = hero.name;
   document.getElementById("hero-role").textContent = hero.role;
-  document.getElementById("hero-tagline").textContent = hero.tagline;
   const descEl = document.getElementById("hero-description");
   if (Array.isArray(hero.description)) {
     descEl.innerHTML = hero.description
-      .map((p) => `<p style="margin-bottom: 1rem;">${p}</p>`)
+      .map((p) => `<p>${p}</p>`)
       .join("");
   } else {
     descEl.textContent = hero.description;
@@ -49,7 +47,7 @@ function renderHero(hero) {
     .join("");
 }
 
-// Contact, Footer & Opportunities Section
+// Contact & Opportunities Section
 function renderContact(contact) {
   // Update Opportunity Info
   const oppDesc = document.getElementById("opp-description");
@@ -62,14 +60,13 @@ function renderContact(contact) {
       .join("");
   }
 
-  // Update All Social/Contact Links (Hero & Footer)
+  // Update All Social/Contact Links (Hero & Opportunities)
   const links = {
     "link-linkedin": contact.linkedin,
     "link-github": contact.github,
     "link-email": `mailto:${contact.email}`,
-    "footer-linkedin": contact.linkedin,
-    "footer-github": contact.github,
-    "footer-email": `mailto:${contact.email}`,
+    "opp-linkedin": contact.linkedin,
+    "opp-email": `mailto:${contact.email}`,
   };
 
   for (const [id, url] of Object.entries(links)) {
@@ -82,56 +79,20 @@ function renderContact(contact) {
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 }
 
-// Learning Section
-function renderLearning(learning) {
-  const title = document.getElementById("learning-title");
-  const desc = document.getElementById("learning-description");
-  const nextSteps = document.getElementById("learning-next-steps");
-
-  if (title) title.textContent = learning.title;
-  if (desc) desc.textContent = learning.description;
-  if (nextSteps) {
-    nextSteps.innerHTML = learning.nextSteps
-      .map((step) => `<span class="next-step-badge">${step}</span>`)
-      .join("");
-  }
+// Background (career transition)
+function renderBackground(background) {
+  const container = document.getElementById("background-text");
+  container.innerHTML = background.text.map((p) => `<p>${p}</p>`).join("");
 }
 
-// Journey Cards
-function renderJourney(journeyItems) {
-  const container = document.getElementById("journey-grid");
-  container.innerHTML = journeyItems
-    .map(
-      (item) => `
-        <div class="journey-card">
-            <div class="icon">${item.icon}</div>
-            <h3>${item.title}</h3>
-            <p>${item.description}</p>
-        </div>
-    `,
-    )
-    .join("");
-}
-
-// Recent Courses (automatically from 3 most recent certificates)
-function renderRecentCourses(certificates) {
-  const container = document.getElementById("recent-courses");
-  const sortedCerts = sortCertificatesByDate(certificates);
-  const recentCourses = sortedCerts.slice(0, 3);
-
-  container.innerHTML = recentCourses
-    .map(
-      (course) => `
-        <div class="course-item">
-            <span class="course-check">✓</span>
-            <div class="course-info">
-                <h4>${course.title}</h4>
-                <div class="course-meta">${course.hours} hours • Completed ${formatDate(course.date)}</div>
-            </div>
-        </div>
-    `,
-    )
-    .join("");
+// Currently (what I am studying now)
+function renderCurrently(current) {
+  const container = document.getElementById("currently-strip");
+  container.innerHTML = `
+        <div class="currently-label">🚀 Currently</div>
+        <h3>${current.title}</h3>
+        <div class="currently-meta">${current.institution} • since ${current.since}</div>
+    `;
 }
 
 // Skills Grid
@@ -142,7 +103,7 @@ function renderSkills(skills) {
       (skill) => `
         <div class="skill-category">
             <h3>${skill.icon} ${skill.category}</h3>
-            <div>
+            <div class="skill-tags">
                 ${skill.tags.map((tag) => `<span class="skill-tag">${tag}</span>`).join("")}
             </div>
         </div>
@@ -161,10 +122,11 @@ function renderProjects(projects) {
   renderProjectGrid(
     "course-projects-grid",
     featured.filter((p) => p.category === "course"),
+    true,
   );
 }
 
-function renderProjectGrid(containerId, projectList) {
+function renderProjectGrid(containerId, projectList, compact = false) {
   const container = document.getElementById(containerId);
 
   container.innerHTML = projectList
@@ -173,10 +135,12 @@ function renderProjectGrid(containerId, projectList) {
         <div class="project-card">
             ${project.hasLiveDemo ? '<div class="project-badge"><span class="badge-live">🚀 Live Demo</span></div>' : ""}
             <div class="project-header">
+                ${project.status ? `<span class="status-chip">${project.status}</span>` : ""}
                 <h3>${project.title}</h3>
             </div>
             <div class="project-body">
-                <p class="project-description">${project.description}</p>
+                <p class="project-description">${compact && project.shortDescription ? project.shortDescription : project.description}</p>
+                ${!compact && project.highlights ? `<ul class="project-highlights">${project.highlights.map((item) => `<li>${item}</li>`).join("")}</ul>` : ""}
                 ${
                   project.badges
                     ? `<div class="project-live-badges">${project.badges
@@ -211,7 +175,7 @@ function renderCertificates(certificates) {
   // Sort all certificates by date (most recent first)
   const sortedCerts = sortCertificatesByDate(certificates);
 
-  // Split into recent (first 3) - mas archived terá TODOS
+  // The 3 most recent certificates are shown first
   const recentCerts = sortedCerts.slice(0, 3);
 
   // Update certificate count dynamically
@@ -223,7 +187,7 @@ function renderCertificates(certificates) {
   recentContainer.innerHTML = recentCerts
     .map((cert) => createCertificateCard(cert))
     .join("");
-  // Archived mostra TODOS (incluindo os 3 recentes)
+  // The archive lists all certificates, including the 3 recent ones
   archivedContainer.innerHTML = sortedCerts
     .map((cert) => createCertificateCard(cert))
     .join("");
