@@ -1,8 +1,8 @@
-# 💼 Professional Portfolio - Thaís Moreira
+# 💼 Professional Portfolio - Thaís de Medeiros Moreira
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-2563eb?style=for-the-badge&logo=github)](https://github.com/thaisdMM/thaisdMM.github.io)
 [![Live](https://img.shields.io/badge/Live-10b981?style=for-the-badge&logo=vercel)](https://thaisdmm.github.io/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077b5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/tha%C3%ADs-moreira-59a28188/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077b5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/tha%C3%ADs-de-medeiros-moreira-59a28188/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)](https://github.com/thaisdMM)
 
 > **Python Developer** | Career transition from Law to Tech | 25+ certifications
@@ -33,11 +33,11 @@ This portfolio showcases my journey as a **Python Developer** focused on backend
 
 📊 **Organized Sections**
 
-- Transition journey storytelling
 - Personal projects and course-based projects, in separate sections
+- Postgraduate degree in progress
 - Technical skills breakdown
+- Short background on the career transition
 - Certifications with repositories
-- Current learning status
 
 ---
 
@@ -83,6 +83,8 @@ Clean separation of concerns: HTML (structure), CSS (styles), JavaScript (logic)
 
 **From Law to Tech:** Bachelor's and Postgraduate in Civil Law (PUC Minas), now applying analytical thinking and problem-solving skills to backend development.
 
+**Postgraduate in Data Analysis:** in progress at Universidade Pitágoras Unopar Anhanguera, since October 2026.
+
 **Current Focus:** Python backend development with Django, Django REST Framework and PostgreSQL. Building projects of my own with automated testing, Docker and CI/CD.
 
 **Learning Path:**
@@ -90,7 +92,7 @@ Clean separation of concerns: HTML (structure), CSS (styles), JavaScript (logic)
 - ✅ 25+ technical certifications (Alura, Rocketseat, XPE)
 - ✅ Hands-on projects with real-world applications
 - ✅ Daily practice with Git, pytest, Docker and CI/CD workflows
-- 🎯 Currently: SkillBridge (freelancer platform backend) and Medication Log API, both in progress, plus SQL (joins and aggregations)
+- 🎯 Currently: Medication Log API and SkillBridge (freelancer platform backend), both in progress, plus the postgraduate degree in Data Analysis
 
 ---
 
@@ -98,7 +100,7 @@ Clean separation of concerns: HTML (structure), CSS (styles), JavaScript (logic)
 
 View all projects with live demos and detailed documentation on the [portfolio website](https://thaisdmm.github.io/) or browse the [GitHub repositories](https://github.com/thaisdMM?tab=repositories).
 
-**Personal projects:** SkillBridge (Django backend, in progress) and Medication Log API (Django, Docker, deployed on Render, in progress).
+**Personal projects:** Medication Log API (Django REST Framework, token authentication, OpenAPI docs, Docker, deployed on Render, in progress) and SkillBridge (Django backend, in progress).
 
 **Course-based projects:** School Manager API (Django REST Framework), Alura Space (Django, with my own refactor), SecureBank API (Flask, JWT, Argon2) and a layered Flask API.
 
@@ -168,9 +170,9 @@ http-server
 
 ## 🎯 Open to Opportunities
 
-Seeking **Python Backend Developer** positions (junior/entry-level) where I can contribute to meaningful projects while growing professionally.
+Seeking **junior Python Developer** positions, in backend or data analysis, where I can contribute to meaningful projects while growing professionally.
 
-**Tech Stack:** Python • Django • Django REST Framework • PostgreSQL • SQL • REST APIs • Pytest • Docker • CI/CD (GitHub Actions) • Git
+**Tech Stack:** Python • Django • Django REST Framework • PostgreSQL • SQL • REST APIs • pytest • Docker • CI/CD (GitHub Actions) • Git
 
 **Work Preferences:** Remote or on-site (Belo Horizonte, Lisbon) • Available immediately
 
@@ -179,7 +181,7 @@ Seeking **Python Backend Developer** positions (junior/entry-level) where I can 
 ## 📫 Contact
 
 - **Portfolio:** [thaisdmm.github.io](https://thaisdmm.github.io/)
-- **LinkedIn:** [Thaís Moreira](https://www.linkedin.com/in/tha%C3%ADs-moreira-59a28188/)
+- **LinkedIn:** [Thaís de Medeiros Moreira](https://www.linkedin.com/in/tha%C3%ADs-de-medeiros-moreira-59a28188/)
 - **GitHub:** [@thaisdMM](https://github.com/thaisdMM)
 - **Email:** thaisdmedeiros@gmail.com
 
@@ -189,7 +191,7 @@ Seeking **Python Backend Developer** positions (junior/entry-level) where I can 
 
 This project is open source and available for educational purposes.
 
-© 2026 Thaís Moreira. All rights reserved.
+© 2026 Thaís de Medeiros Moreira. All rights reserved.
 
 ---
 
