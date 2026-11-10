@@ -100,7 +100,7 @@ Clean separation of concerns: HTML (structure), CSS (styles), JavaScript (logic)
 
 View all projects with live demos and detailed documentation on the [portfolio website](https://thaisdmm.github.io/) or browse the [GitHub repositories](https://github.com/thaisdMM?tab=repositories).
 
-**Personal projects:** Medication Log API (Django REST Framework, token authentication, OpenAPI docs, Docker, deployed on Render, in progress) and SkillBridge (Django backend, in progress).
+**Personal projects:** Medication Log API (Django REST Framework, medication CRUD per account, token authentication, OpenAPI docs, 160+ pytest tests, Docker, deployed on Render, in progress) and SkillBridge (Django backend, in progress).
 
 **Course-based projects:** School Manager API (Django REST Framework), Alura Space (Django, with my own refactor), SecureBank API (Flask, JWT, Argon2) and a layered Flask API.
 

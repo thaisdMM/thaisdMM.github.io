@@ -136,14 +136,17 @@
       ],
       "github": "https://github.com/thaisdMM/medication-log-api",
       "demo": "https://medication-log-api.onrender.com/api/docs/",
+      "demoLabel": "API docs (Swagger)",
       "featured": true,
       "hasLiveDemo": false,
       "category": "personal",
       "highlights": [
-        "Token authentication with django-rest-knox: tokens stored hashed, fixed expiry, deleted on logout.",
-        "Closed by default: endpoints without an explicit permission refuse anonymous requests, and login never reveals which accounts exist.",
+        "Create, view, edit and delete medications, with each account seeing only its own records. Account deletion asks for the password again and removes the account, its medications and tokens.",
+        "Each slice closes with a full run against the public address. The medications slice was proven with curl on two throwaway accounts: duplicates refused, another account's medications answering 404, account deletion followed by a new sign-up with the same email, logout of one token and of all, then the same flows in Swagger UI and the database checked in Neon before and after cleanup.",
+        "Token authentication with django-rest-knox (tokens stored hashed, fixed expiry, deleted on logout), closed by default: endpoints without an explicit permission refuse anonymous requests, and login never reveals which accounts exist.",
         "Care with personal data: responses return only what each endpoint needs, and the public environment holds only fictional data.",
-        "Documented with OpenAPI and a public Swagger UI page.",
+        "OpenAPI documentation with a public Swagger UI page that describes every route with the errors it can return, with examples checked by tests against the API's real responses.",
+        "160+ automated tests with pytest (unit, integration against PostgreSQL and API tests over HTTP), with 97% coverage and tests seen failing against deliberate breaks in the code.",
         "Multi-stage, non-root Docker image served by Granian, deployed on Render with Neon PostgreSQL after CI passes (lint, strict mypy, tests against PostgreSQL, image build)."
       ],
       "badges": [
@@ -157,10 +160,11 @@
     },
     {
       "title": "SkillBridge - Freelancer Platform Backend",
-      "description": "First modules of a freelancing-platform backend.",
+      "description": "First backend modules of a freelancer platform in Django: accounts, profiles and skills, managed through a customized admin panel.",
       "tech": [
         "Python",
         "Django",
+        "Django admin",
         "PostgreSQL",
         "Docker",
         "Docker Compose",
@@ -188,11 +192,12 @@
       ],
       "category": "personal",
       "highlights": [
-        "Accounts and profiles with a custom user model (email login), abstract base models, one-to-one and many-to-many relations, custom validators and admin panel.",
-        "Check and unique constraints enforced in the database.",
-        "304 automated tests and a four-job GitHub Actions CI: tests against PostgreSQL with a 95% coverage gate, Ruff and strict mypy, Docker image build and full-history secret scanning (Gitleaks).",
-        "Passwords hashed with Argon2id, and Dependabot keeps dependencies up to date.",
-        "Log messages never include emails or passwords."
+        "Custom user model with email login, abstract base models for users and profiles, one-to-one and many-to-many relations, and check and unique constraints enforced in the database.",
+        "Customized Django admin with one screen per account type (clients, freelancers, staff): each profile is edited inside its account screen, with status badges, search, custom filters and bulk actions.",
+        "Business rules enforced in the admin: accounts are deactivated, never deleted; bulk actions skip accounts that would break a rule; a skill cannot be removed while a profile still uses it; only superusers can change staff status.",
+        "Profile badges resolved with one annotated query per page (Exists subquery) instead of one query per row.",
+        "300+ automated tests and a four-job GitHub Actions CI: tests against PostgreSQL with a 95% coverage gate, Ruff and strict mypy, Docker image build and full-history secret scanning (Gitleaks).",
+        "Passwords hashed with Argon2id and validated for strength on account creation; Dependabot keeps dependencies up to date, and log messages never include emails or passwords."
       ],
       "status": "In progress"
     },
