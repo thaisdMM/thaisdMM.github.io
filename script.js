@@ -157,7 +157,7 @@ function renderProjectGrid(containerId, projectList, compact = false) {
                 <div class="project-links">
                     <a href="${project.github}" target="_blank" class="project-link">→ View Code</a>
                     ${project.githubFrontend ? `<a href="${project.githubFrontend}" target="_blank" class="project-link">→ Frontend</a>` : ""}
-                    ${project.demo ? `<a href="${project.demo}" target="_blank" class="project-link project-link-primary">→ Live Demo</a>` : ""}
+                    ${project.demo ? `<a href="${project.demo}" target="_blank" class="project-link project-link-primary">→ ${project.demoLabel || "Live Demo"}</a>` : ""}
                 </div>
             </div>
         </div>
